@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="f1.css">
+    <title>McDonald's Clone</title>
+    <script src="f1.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to McDonald's Clone</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our McDonald's Clone website!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+
+        <div class="menu-section" id="burgers">
+            <h3>Burgers</h3>
+
+            <div class="burger-item" id="burger1">
+                <img src="kcskl .png" alt="Burger 1">
+                <h4>Burger 1</h4>
+                <p>Description of Burger 1.</p>
+                <div class="item-controls">
+                    <button onclick="adjustQuantity('burger1', -1)">-</button>
+                    <input type="text" id="burger1Quantity" value="0" readonly>
+                    <button onclick="adjustQuantity('burger1', 1)">+</button>
+                    <button onclick="addToCart('Burger 1', 5.99, 'burger1')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="burger-item" id="burger2">
+                <img src="burger2.jpg" alt="Burger 2">
+                <h4>Burger 2</h4>
+                <p>Description of Burger 2.</p>
+                <div class="item-controls">
+                    <button onclick="adjustQuantity('burger2', -1)">-</button>
+                    <input type="text" id="burger2Quantity" value="0" readonly>
+                    <button onclick="adjustQuantity('burger2', 1)">+</button>
+                    <button onclick="addToCart('Burger 2', 6.99, 'burger2')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="burger-item" id="burger3">
+                <img src="burger3.jpg" alt="Burger 3">
+                <h4>Burger 3</h4>
+                <p>Description of Burger 3.</p>
+                <div class="item-controls">
+                    <button onclick="adjustQuantity('burger3', -1)">-</button>
+                    <input type="text" id="burger3Quantity" value="0" readonly>
+                    <button onclick="adjustQuantity('burger3', 1)">+</button>
+                    <button onclick="addToCart('Burger 3', 7.99, 'burger3')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="burger-item" id="burger4">
+                <img src="burger4.jpg" alt="Burger 4">
+                <h4>Burger 4</h4>
+                <p>Description of Burger 4.</p>
+                <div class="item-controls">
+                    <button onclick="adjustQuantity('burger4', -1)">-</button>
+                    <input type="text" id="burger4Quantity" value="0" readonly>
+                    <button onclick="adjustQuantity('burger4', 1)">+</button>
+                    <button onclick="addToCart('Burger 4', 8.99, 'burger4')">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menu-section" id="wraps">
+            <h3>Wraps</h3>
+
+            <!-- Add wrap items here -->
+
+        </div>
+
+        <div class="menu-section" id="shakes">
+            <h3>Shakes</h3>
+
+            <!-- Add shake items here -->
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This is a clone of McDonald's website.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@mcdonaldsclone.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: $<span id="cart-total">0.00</span></p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 McDonald's Clone</p>
+    </footer>
+</body>
+
+</html>
